@@ -5,7 +5,7 @@
   "main": "metronserver.js",
   "type": "module",
   "scripts": {
-    "start": "node metronserver.js"
+    "start": "nodemon metronserver.js"
   },
   "keywords": [],
   "author": "",

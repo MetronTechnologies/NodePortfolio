@@ -8,8 +8,8 @@ import dotenv from 'dotenv'
 dotenv.config();
 const app = express();
 
-const connection_url = process.env.CONNECTION_URL;
-const port = process.env.PORT; 
+const connection_url = process.env.connectionurl;
+const port = process.env.PORT;
 
 app.use(bodyParser.json(
     {
