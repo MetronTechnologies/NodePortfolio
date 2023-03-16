@@ -2,7 +2,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
-import metronrouter from './controller/metroncontroller.js';
+import {metroncontroller} from './controller/metroncontroller.js';
 import dotenv from 'dotenv'
 
 dotenv.config();
@@ -27,7 +27,7 @@ app.use(bodyParser.urlencoded(
 
 app.use(cors());
 
-app.use('/mt', metronrouter);
+app.use('/mt', metroncontroller);
 
 app.get("/", (request, response) => {
     response.send("Metron is live");
@@ -50,6 +50,3 @@ mongoose
             console.log("Error " + error)
         }
     )
-
-
-

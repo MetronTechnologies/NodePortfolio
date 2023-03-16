@@ -67,8 +67,22 @@ async function getComment(request, response) {
     }
 }
 
+async function trial(request, response) {
+    console.log("This got here");
+    try{
+        const mide = {
+            id: 1,
+            name: "Liam"
+        }
+        response.send("This is Adrian");
+        // response.status(200).json(mide);
+    } catch(error){
+
+    }
+}
 
 
-export {getWork, saveWork, saveComment, getComment} 
+
+export {getWork, saveWork, saveComment, getComment, trial} 
 
 

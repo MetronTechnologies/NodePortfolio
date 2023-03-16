@@ -9,7 +9,7 @@ metroncontroller.post('/work/savework', saveWork);
 metroncontroller.post('/comment/savecomment', saveComment);
 metroncontroller.get('/comment/getcomment', getComment);
 
-export default metroncontroller;
+export {metroncontroller};
 
 
 
